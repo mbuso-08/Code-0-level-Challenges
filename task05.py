@@ -1,10 +1,9 @@
-# x,y,z represents three sides of a triangle
-x = int(3)
-y = int(4)
-z = int(5)
+import argparse
+from ast import arg
 
-# semiperimeter calculation
-s = (1/2) * (x + y + z)
 
-area = (s*(s - x) * (s - y) * (s - z)) ** (1/2)
-print(area)
+def area(x, y, z):
+    print((((1/2) * (x + y + z))*(((1/2) * (x + y + z)) - x) * (((1/2) * (x + y + z)) - y) * (((1/2) * (x + y + z)) - z)) ** (1/2))
+    
+
+print(area(7, 4, 6))
